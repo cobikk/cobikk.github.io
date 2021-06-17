@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script>
+            function getURL(url){
+                document.getElementById('frame').src 
+                   = 'path/to/proxyscript.php?url='+encodeURIComponent(url);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="getURL( 'http://www.google.com')">Google</button>
+        <iframe id="frame" src=""></iframe>
+    </body>
+</html> 
